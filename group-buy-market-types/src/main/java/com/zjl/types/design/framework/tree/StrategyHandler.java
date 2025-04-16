@@ -20,5 +20,5 @@ public interface StrategyHandler<T, D, R> {
      * @param dynamicContext 上下文
      * @return 返回的结果，如试算的结果
      */
-    R apply(T requestParameter, D dynamicContext);
+    R apply(T requestParameter, D dynamicContext) throws Exception;
 }
